@@ -1,0 +1,44 @@
+:root {
+  --white-main: #ffffff;
+  --secondary-gray: #c0c0c0;
+  --button-orange: #ff8000;
+  --background-color: #00030c;
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  background-color: var(--background-color);
+  color: var(--white-main);
+}
+.principal {
+  background-image: url("../img/Combo-whopper.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.container {
+  height: 100vh;
+  background-position: right 80%;
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
+
+.container_botao {
+  background-color: var(--button-orange);
+  border-radius: 5px;
+  padding: 1em;
+  color: var(--white-main);
+  display: block;
+}
+.botao_secundario {
+  background-color: transparent;
+  border: 2px solid var(--white-main);
+}
+h1 {
+  color: #ff8000;
+  padding: 1rem;
+}
+.texto {
+  padding: 1rem;
+}
