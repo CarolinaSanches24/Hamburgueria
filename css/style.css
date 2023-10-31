@@ -90,7 +90,7 @@ nav ul li a:hover {
 }
 h1 {
   color: #ff8000;
-  padding: 1rem;
+  padding: 0 0 1rem;
   font-size: 35px;
   font-weight: 700;
 }
@@ -98,7 +98,40 @@ h1 {
   margin: 0 6rem;
 }
 .texto {
-  padding: 1rem 6rem 2rem 1rem;
+  padding: 0 0 2rem 0;
   text-align: justify;
   font-size: 18px;
+}
+
+.secundario__imagem {
+  width: 80%;
+}
+
+.secundario {
+  align-items: center;
+  margin: 0 10em;
+}
+.descricao_titulo {
+  font-weight: 700;
+  color: #ff8000;
+  font-size: 35px;
+  margin-bottom: 0.5em;
+}
+.descricao_texto {
+  text-align: justify;
+  margin-bottom: 2em;
+  font-size: 18px;
+}
+.rodape {
+  background-color: var(--button-orange);
+  text-align: center;
+  padding: 1rem 1rem 1rem 1rem;
+}
+footer img {
+  padding: 1rem 0rem 1rem;
+  width: 30px;
+}
+.rodape_titulo {
+  font-weight: 700;
+  font-size: 20px;
 }
