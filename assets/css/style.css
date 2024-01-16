@@ -1,3 +1,5 @@
+@import url("./responsive.css");
+
 :root {
   --white-main: #ffffff;
   --secondary-gray: #c0c0c0;
