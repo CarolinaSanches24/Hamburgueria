@@ -5,6 +5,7 @@
   --secondary-gray: #c0c0c0;
   --button-orange: #ff8000;
   --background-color: #00030c;
+  --cor-preto: #333;
   --font-main: "Inter";
 }
 * {
@@ -46,16 +47,25 @@ nav ul {
   padding-left: 60%;
 }
 nav ul li {
-  display: inline;
+  display: inline-block;
   margin-right: 4rem;
 }
 nav ul li a {
   text-decoration: none;
-  color: white;
+  color: var(--white-main);
   font-weight: bold;
+  font-size: 30px;
+  position: relative;
+}
+nav ul li:hover {
+  transform: translateY(-5px);
+  transition: 0.5s;
 }
 nav ul li a:hover {
   color: #ffcc00;
+}
+.btn-menu {
+  display: none;
 }
 .principal {
   background-image: url("../img/Combo-whopper.png");
@@ -104,15 +114,16 @@ h1 {
   text-align: justify;
   font-size: 18px;
 }
-
-.secundario__imagem {
-  width: 80%;
-}
-
-.secundario {
+.container__secundario {
+  display: flex;
+  margin: 0 5em;
+  justify-content: center;
   align-items: center;
-  margin: 0 10em;
 }
+.secundario__imagem {
+  width: 50%;
+}
+
 .descricao_titulo {
   font-weight: 700;
   color: #ff8000;
@@ -123,6 +134,49 @@ h1 {
   text-align: justify;
   margin-bottom: 2em;
   font-size: 18px;
+}
+.container__botao__secundario {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.secundario__botaoComprar {
+  background-color: var(--button-orange);
+  border-radius: 5px;
+  padding: 1em 2em;
+  color: var(--white-main);
+  text-decoration: none;
+  margin-bottom: 1rem;
+  text-align: center;
+  width: 100%;
+  box-sizing: border-box;
+}
+.secundario__botaoPromocoes {
+  background-color: transparent;
+  border: 2px solid var(--white-main);
+  text-decoration: none;
+  border-radius: 5px;
+  padding: 1em 2em;
+  color: var(--white-main);
+  box-sizing: border-box;
+  width: 100%;
+  text-align: center;
+}
+
+.secundario__botaoComprar:hover {
+  opacity: 0.5;
+  transition: 0.8s;
+}
+.secundario__botaoPromocoes:hover {
+  opacity: 0.5;
+  transition: 0.8s;
+  color: var(--white-main);
+}
+.container__secundario__aviso {
+  padding: 1em 0;
+  font-size: 12px;
+  color: var(--secondary-gray);
+  text-align: center;
 }
 .rodape {
   background-color: var(--button-orange);

@@ -19,7 +19,7 @@
   </head>
 
   <body>
-    <header>
+    <header class="header">
       <button type="button" class="btn-carrinho">
         <img
           id="carrinho"
@@ -28,12 +28,21 @@
           id="carrinho"
         />
       </button>
-      <nav>
-        <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="./html/cardapio.html">Cardápio</a></li>
-          <li><a href="#">Sobre</a></li>
-          <li><a href="#">Contato</a></li>
+      <nav class="nav">
+        <button
+          class="btn-menu"
+          aria-label="Abrir Menu"
+          aria-haspopup="true"
+          aria-controls="menu"
+          aria-expanded="false"
+        >
+          Menu<span class="hamburger"></span>
+        </button>
+        <ul class="menu" id="menu" role="menu">
+          <li><a href="/">Home</a></li>
+          <li><a href="/">Cardapio</a></li>
+          <li><a href="/">Contato</a></li>
+          <li><a href="/">Login</a></li>
         </ul>
       </nav>
     </header>
@@ -52,7 +61,7 @@
         </p>
       </div>
     </section>
-    <section class="container secundario">
+    <section class="container__secundario">
       <img
         class="secundario__imagem"
         src="./assets/img/whopper_cheddar.png"
@@ -67,12 +76,13 @@
           Heinz, bacon em cubos crocantes e sequinho, cebola em rodela, tomate
           cortado na loja, alface fresco e maionese.
         </p>
-
-        <a href="#" class="container_botao">Comprar Agora</a>
-        <a href="#" class="container_botao botao_secundario">Mais Promoções</a>
-        <p class="container_aviso">
-          *Promoção Válida somente para o mês de Outubro
-        </p>
+        <div class="container__botao__secundario">
+          <a href="#" class="secundario__botaoComprar">Comprar Agora</a>
+          <a href="#" class="secundario__botaoPromocoes">Mais Promoções</a>
+          <p class="container__secundario__aviso">
+            *Promoção Válida somente para o mês de Outubro
+          </p>
+        </div>
       </div>
     </section>
     <footer class="rodape">
@@ -92,5 +102,6 @@
         direitos reservados.
       </p>
     </footer>
+    <script src="./js/script.js"></script>
   </body>
 </html>
